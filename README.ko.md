@@ -63,6 +63,10 @@ npx playwright install chromium
 npm test
 ```
 
+## 관련 프로젝트
+
+- [AirQR](https://github.com/SinlinLi/airqr) — 에어갭 QR 코드 생성 및 스캔 도구
+
 ## 라이선스
 
 MIT

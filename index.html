@@ -38,20 +38,18 @@ body {
   max-width: 480px;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-header h1 {
+h1 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
+  text-align: center;
 }
 
-header p {
+.subtitle {
   color: var(--text2);
   font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* Tabs */
@@ -260,6 +258,27 @@ textarea.tall { min-height: 120px; }
 
 .howto-note { margin-top: 8px; }
 
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #0c1a2e;
+  color: var(--accent);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  margin-top: 1.5rem;
+}
+
+.badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -274,6 +293,10 @@ footer a {
   text-decoration: none;
 }
 
+.air-family {
+  margin-top: 0.25rem;
+}
+
 /* Responsive */
 @media (max-width: 480px) {
   body { padding: 1rem 0.75rem; }
@@ -285,10 +308,8 @@ footer a {
 <body>
 
 <div class="container">
-  <header>
-    <h1>Airbox</h1>
-    <p>Browser-side RSA encryption. Nothing leaves your device.</p>
-  </header>
+  <h1>Airbox</h1>
+  <p class="subtitle">RSA encryption tool. All data stays in your browser.</p>
 
   <div class="tabs" role="tablist">
     <button class="tab active" role="tab" data-tab="generate" aria-selected="true">Generate Keys</button>
@@ -413,8 +434,11 @@ footer a {
     </div>
   </div>
 
+  <div class="badge">Offline &amp; Secure — CSP blocks all external connections</div>
+
   <footer>
-    <a href="https://github.com/SinlinLi/airbox" target="_blank" rel="noopener">Airbox</a> &mdash; open source, zero dependency, privacy first.
+    <p><a href="https://github.com/SinlinLi/airbox">Source on GitHub</a></p>
+    <p class="air-family">Air toolkit: <a href="https://sinlinli.github.io/airqr/">AirQR</a> &middot; <strong>Airbox</strong></p>
   </footer>
 </div>
 

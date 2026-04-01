@@ -63,6 +63,10 @@ npx playwright install chromium
 npm test
 ```
 
+## See also
+
+- [AirQR](https://github.com/SinlinLi/airqr) — Air-gapped QR code generator & scanner
+
 ## License
 
 MIT
