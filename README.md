@@ -4,6 +4,8 @@ English | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국�
 
 Browser-side RSA encryption for passing secrets through insecure channels.
 
+**Try it now:** https://sinlinli.github.io/airbox/
+
 ## What it does
 
 Encrypt short text (contacts, passwords, notes) so only the intended recipient can read them. Works entirely in the browser — no server, no signup, no installation.
