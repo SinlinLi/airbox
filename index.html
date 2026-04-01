@@ -11,12 +11,10 @@
 :root {
   --bg: #0a0a0a;
   --surface: #141414;
-  --surface2: #1a1a1a;
   --border: #262626;
   --text: #e5e5e5;
   --text2: #737373;
   --accent: #3b82f6;
-  --accent-hover: #60a5fa;
   --success: #10b981;
   --error: #ef4444;
   --radius: 12px;
@@ -96,13 +94,13 @@ h1 {
 .card h3 {
   font-size: 0.9375rem;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .card-desc {
   font-size: 0.8125rem;
   color: var(--text2);
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 label {
@@ -135,14 +133,14 @@ textarea:focus {
 }
 textarea.tall { min-height: 120px; }
 
-.field { margin-bottom: 12px; }
+.field { margin-bottom: 1rem; }
 .field:last-child { margin-bottom: 0; }
 
 .byte-count {
   font-size: 0.75rem;
   color: var(--text2);
   text-align: right;
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 .byte-count.over { color: var(--error); font-weight: 600; }
@@ -191,7 +189,7 @@ textarea.tall { min-height: 120px; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 0.4rem;
 }
 
 .output-header label { margin-bottom: 0; }
@@ -199,14 +197,14 @@ textarea.tall { min-height: 120px; }
 /* Status messages */
 .status {
   font-size: 0.8125rem;
-  padding: 8px 12px;
+  padding: 0.5rem 0.75rem;
   border-radius: 6px;
-  margin-top: 12px;
+  margin-top: 0.75rem;
   display: none;
 }
 
 .status.show { display: block; }
-.status.success { background: rgba(34, 197, 94, 0.1); color: var(--success); }
+.status.success { background: rgba(16, 185, 129, 0.1); color: var(--success); }
 .status.error { background: rgba(239, 68, 68, 0.1); color: var(--error); }
 
 /* How-to section */
@@ -241,7 +239,7 @@ textarea.tall { min-height: 120px; }
 
 .howto-content {
   display: none;
-  margin-top: 12px;
+  margin-top: 0.75rem;
   font-size: 0.8125rem;
   color: var(--text2);
   line-height: 1.7;
@@ -250,11 +248,11 @@ textarea.tall { min-height: 120px; }
 .howto-content.open { display: block; }
 
 .howto-content ol, .howto-content ul {
-  padding-left: 20px;
-  margin: 4px 0;
+  padding-left: 1.25rem;
+  margin: 0.25rem 0;
 }
 
-.howto-content li { margin: 4px 0; }
+.howto-content li { margin: 0.25rem 0; }
 
 .howto-note { margin-top: 8px; }
 
